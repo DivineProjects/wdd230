@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #050714ff;
+    --secondary-color: #1d7fc2ff;
+    --accent1-color: #6584afff;
+    --accent2-color: #6b6253ff;
+
+    --heading-font: 'Roboto', 'Cherry Swash', serif;
+    --paragraph-font: 'Sans-serif', serif;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 900px;
+    padding: 20px;
+    color: var(--primary-color);
+    background-color: lightgrey;
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--heading-font);
+}
+
+ul {
+    background-color: var(--accent2-color);
+    margin: 1.5rem;
+}
+
+p {
+    padding: 20px;
+    font-family: var(--paragraph-font);
+}
