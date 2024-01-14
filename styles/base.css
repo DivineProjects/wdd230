@@ -1,0 +1,146 @@
+:root {
+    --defaualt-font: 'Roboto', 'Cherry Swash', 'serif', sans-serif;
+    --secondary-font: 'serif';
+
+    --background-color: rgb(19, 19, 22);
+    --text-color: rgb(238, 238, 248);
+    --primary-color: rgb(238, 238, 248);
+    --accent1-color: rgb(1, 1, 5);
+    --accent2-color: rgb(255, 255, 250);
+    --accent4-color: rgb(32, 32, 118);
+    --section-background-color: rgb(14, 14, 15);
+
+
+    --nav-background-color: rgb(14, 14, 15);
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--defaualt-font);
+    padding: 20px;
+    color: var(--text-color);
+    background: var(--background-color);
+    font: 100;
+}
+
+header {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent1-color);
+
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    margin: 2px;
+}
+
+header span {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: var(--primary-color);
+    font: 400;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    color: var(--accent2-color);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+nav a:hover {
+    border: 1px solid white;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.active {
+    border-bottom: 1px solid yellow;
+}
+
+h1 {
+    grid-column: 1/3;
+    font-family: var(--secondary-font);
+    color: var(--accent2-color);
+    margin: 1rem 0;
+    font: 100;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font);
+}
+
+main {
+    margin: 0;
+    max-width: 100rem;
+    margin: 1rem 2vw;
+}
+
+section {
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border: 1px solid var(--primary-color);
+    box-shadow: 1px 1px 1px px var(--background-color);
+    background-color: var(--section-background-color);
+
+}
+
+section a {
+    color: coral;
+}
+
+.card h2 {
+    background-color: var(--accent4-color);
+    text-align: center;
+    padding: 0.25rem;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+#card2 {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--accent2-color);
+    overflow: visible;
+    text-align: center;
+}
+
+footer {
+    color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--accent1-color);
+}

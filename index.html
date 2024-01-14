@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Divine Jigu] - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Divine Jigu">
+    <meta name="author" content="Divine Jigu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/jiguprofile.jpg" alt="Divine Jigu Profile">
+        <span>Divine Jigu</span>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h1>WDD 230: Web Frontend Development</h1>
+
+        <hr />
+        <section class="card" id="card1">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="">Activity 1</a></li>
+                <li><a href="">Activity 2</a></li>
+            </ul>
+        </section>
+        <section class="card" id="card2">
+            <h2>Information</h2>
+            <ul>
+                <li>Weather</li>
+                <li>Number of visits to the page</li>
+                <li>etc</li>
+            </ul>
+        </section>
+
+    </main>
+    <hr />
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+</body>
+
+</html>
