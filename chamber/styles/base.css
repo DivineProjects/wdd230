@@ -97,8 +97,19 @@ main {
     color: var(--accent1-color);
 }
 
+section {
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 2px;
+}
+
 section p {
     color: white;
+}
+
+section ul {
+    display: block;
+    list-style-type: none;
+    padding: 2rem;
 }
 
 p {
@@ -110,6 +121,15 @@ img {
     width: fit-content;
 }
 
+.chamberBtn {
+    color: white;
+    text-decoration: none;
+    background-color: #004080;
+    align-items: center;
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 1rem;
+}
 
 /* small view navigation with humburgar menu*/
 #menu {
