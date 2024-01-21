@@ -35,10 +35,15 @@
 
         <img src="images/jiguprofile.jpg" alt="Divine Jigu Profile">
         <span>Divine Jigu</span>
+        <div id="mode">
+            🕶️
+        </div>
 
     </header>
+
     <nav>
-        <ul>
+        <button id="menu"></button>
+        <ul class="navigation">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="#">Site Plan</a></li>
@@ -49,12 +54,14 @@
 
         <h1>WDD 230: Web Frontend Development</h1>
 
-        <hr />
+
+        <hr>
         <section class="card" id="card1">
             <h2>Learning Activities</h2>
             <ul>
-                <li><a href="https://codepen.io/Divine-Jigu/details/vYPmwdb">Responsive Menu using 'Hamburger'</a></li>
-                <li><a href="week02\bom.html">Favorite Book of Mormon Chapters</a></li>
+                <li><a href="https://codepen.io/Divine-Jigu/details/vYPmwdb" target="_blank">Responsive Menu using
+                        'Hamburger'</a></li>
+                <li><a href="week02/bom.html" target="_blank">Favorite Book of Mormon Chapters</a></li>
             </ul>
         </section>
         <section class="card" id="card2">
@@ -67,14 +74,17 @@
         </section>
 
     </main>
-    <hr />
+    <hr>
     <footer>
         <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
         <p id="lastModified"></p>
-
-
+        <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
     </footer>
+
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/mode.js"></script>
+
 </body>
 
 </html>
