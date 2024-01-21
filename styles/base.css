@@ -9,7 +9,7 @@
 
     --header-bgd-color: rgb(2, 51, 81);
     --nav-background-color: rgb(58, 62, 65);
-    --link-color: navy;
+    --link-color: black;
     --footer-color: #B3B8BC;
 }
 
@@ -227,4 +227,9 @@ footer {
     text-align: center;
     width: 100%;
     background-color: var(--footer-color);
+}
+
+footer a{
+    color: #010C14;
+    cursor: pointer;
 }
