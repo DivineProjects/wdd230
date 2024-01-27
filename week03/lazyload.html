@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <link rel="stylesheet" href="styles/larger-lazy.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Loading Images</h1>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../chamber/index.html">Chamber</a></li>
+            <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+
+    <Main>
+
+
+        <picture>
+            <img src="https://picsum.photos/600/400?random=1" alt="Placeholder" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/600/400?random=2" alt="Placeholder" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/600/400?random=3" alt="Placeholder" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/600/400?random=4" alt="Placeholder" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/600/400?random=5" alt="Placeholder" loading="lazy">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/600/400?random=6" alt="Placeholder" loading="lazy">
+        </picture>
+
+    </Main>
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
+        <p id="lastModified"></p>
+        <p><a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/mode.js"></script>
+</body>
+
+</html>

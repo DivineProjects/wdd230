@@ -54,9 +54,8 @@ header span {
     position: absolute;
     top: 2rem;
     right: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    font-size: 2rem;
     padding: 2px;
 }
 
@@ -170,17 +169,15 @@ hr {
     text-align: center;
 }
 
-
-
 /* small view navigation with humburgar menu*/
 #menu {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 3px 7px 6px;
     position: absolute;
     /* Set the distance from the top */
-    top: 1rem;
+    top: 8rem;
     /* Set the distance from the right */
-    right: 1rem;
+    right: 2rem;
     cursor: pointer;
 }
 
