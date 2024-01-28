@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy Loading Image</title>
+    <title>Responsive Images</title>
     <meta name="description"
-        content="Alleviates some of the load time by waiting until the page assets are actually needed by the user as they scroll. We introduce the design pattern of progressive loading or 'lazy-loading' of images.">
+        content="Is a website with examples of responsive image design that support smaller page weights and to deliver content based upon screen size. 
+        It reduce page weight while being conscious of image clarity and functionality in each screen size and subsequent viewport (the visible area of a web page).">
     <meta name="author" content="Divine Jigu">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/lazyload.css">
-    <link rel="stylesheet" href="styles/larger-lazy.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 
 <body>
     <header>
-        <h1>Lazy Loading Images</h1>
+        <h1>Responsive Image</h1>
         <div id="mode">
             🕶️
         </div>
@@ -36,30 +38,16 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Ghana Accra Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
 
-    <Main>
-
-
-        <picture>
-            <img src="https://picsum.photos/600/400?random=1" alt="Placeholder" loading="lazy">
-        </picture>
-        <picture>
-            <img src="https://picsum.photos/600/400?random=2" alt="Placeholder" loading="lazy">
-        </picture>
-        <picture>
-            <img src="https://picsum.photos/600/400?random=3" alt="Placeholder" loading="lazy">
-        </picture>
-        <picture>
-            <img src="https://picsum.photos/600/400?random=4" alt="Placeholder" loading="lazy">
-        </picture>
-        <picture>
-            <img src="https://picsum.photos/600/400?random=5" alt="Placeholder" loading="lazy">
-        </picture>
-        <picture>
-            <img src="https://picsum.photos/600/400?random=6" alt="Placeholder" loading="lazy">
-        </picture>
-
-    </Main>
 
     <footer>
         <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
