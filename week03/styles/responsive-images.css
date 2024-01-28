@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: rgb(5, 7, 20);
     --secondary-color: #1d7fc2ff;
@@ -82,7 +81,7 @@ nav a:hover {
     margin-bottom: 2px;
 }
 
-img{
+.hero img {
     width: 100%;
     height: auto;
 }
