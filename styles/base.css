@@ -117,6 +117,34 @@ main {
     color: var(--accent1-color);
 }
 
+.hero {
+    position: relative;
+}
+
+.hero picture {
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.herolabel span {
+    position: absolute;
+    margin: 0;
+    padding: .25rem;
+    font-weight: bolder;
+    top: 10%;
+    width: 30%;
+    left: 1%;
+    text-align: center;
+    background: rgba(255, 255, 255, .5);
+    opacity: 0.90;
+    border-top: 0.2rem solid var(--header-bgd-color);
+}
+
 section {
     border-radius: 5px;
     margin: 0.5rem 0;
@@ -217,6 +245,13 @@ hr {
     display: block;
 }
 
+iframe {
+    display: grid;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
 
 footer {
     color: var(--primary-color);
@@ -228,5 +263,12 @@ footer {
 
 footer a {
     color: #010C14;
+    cursor: pointer;
+}
+
+footer img {
+    width: 20px;
+    justify-self: center;
+    align-self: center;
     cursor: pointer;
 }
