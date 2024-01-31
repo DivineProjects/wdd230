@@ -117,19 +117,6 @@ main {
     color: var(--accent1-color);
 }
 
-.hero {
-    position: relative;
-}
-
-.hero picture {
-    width: 100%;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 .herolabel span {
     position: absolute;
@@ -143,6 +130,27 @@ main {
     background: rgba(255, 255, 255, .5);
     opacity: 0.90;
     border-top: 0.2rem solid var(--header-bgd-color);
+}
+
+.discover-hero {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.discover-hero h2 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, .4);
+    padding: 1rem;
+    text-align: center;
+}
+
+.discover-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 section {
@@ -177,6 +185,28 @@ section a {
 
 .main-dark a {
     color: white;
+}
+
+.discover-hero {
+    position: relative;
+    grid-column: 1 / 3;
+    margin-bottom: 1rem;
+}
+
+.discover-hero h2 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(255, 255, 255, .4);
+    padding: 1rem;
+    text-align: center;
+}
+
+.discover-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 
@@ -272,3 +302,6 @@ footer img {
     align-self: center;
     cursor: pointer;
 }
+
+
+/* css for CHAMBER OF MINES DISCOVERY PAGE  */

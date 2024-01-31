@@ -23,16 +23,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 
 </head>
 
 <body>
     <header>
-        <img src="images/jiguprofile.jpg" alt="Divine Jigu Profile">
+        <img src="../images/jiguprofile.jpg" alt="Divine Jigu Profile" loading="lazy">
         <span>Divine Jigu</span>
         <div id="mode">
             🕶️
@@ -42,48 +43,108 @@
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
-            <li><a class="active">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active">Chamber</a></li>
             <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+
     <main>
 
-        <div class="hero">
-            <div class="herolabel">
-                <span>Ghana Temple</span>
+        <div class="grid">
+
+            <div class="discover-hero">
+                <h2>Powering the City of Kings since 1890</h2>
+                <picture>
+                    <source srcset="images/vic-falls-400" media="(max-width: 400px)">
+                    <img src="images/vic-falls-960.webp" alt="Victoria Falls hero image" width="960" height="480"
+                        loading="lazy">
+                </picture>
             </div>
 
-            <picture>
-                <source srcset="images/hero-small-400.webp" media="(max-width: 400px)">
-                <source srcset="images/hero-large-960.webp" media="(max-width: 960px)">
-                <img src="images/hero-large-960.webp" alt="Ghana Temple hero image" width="960" height="480">
-            </picture>
+            <div class="sidebar-left">
+
+                <section class="card">
+                    <h2>Hello 🥳</h2>
+                    <p class="hello"> </p>
+                </section>
+
+                <section class="card" id="card2">
+                    <h2>Information &#129300; </h2>
+                    <ul>
+                        <li>Weather</li>
+                        <li>Number of visits to the page: <span class="visits"></span></li>
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <h2>Summary</h2>
+                    <ul>
+                        <li>Population: </li>
+                        <li>Temperature: </li>
+                        <li>Latitude: </li>
+                        <li>Rainfall: </li>
+                    </ul>
+                </section>
+
+                <section class="card">
+                    <h2>History</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit enim sunt provident reiciendis!
+                        Eius
+                        molestiae a nostrum tempora, deleniti accusamus. <a href="#" class="paragraph-link">Learn
+                            more</a>
+                    </p>
+                </section>
+            </div>
+
+            <div class="sidebar-right">
+
+                <div class="adventure">
+                    <h2>The Wonderland Awaits!!!</h2>
+                    <figure><img src="images/rhino-400.webp" alt="Adventure1" loading="lazy">
+                        <figcaption>White Rhino</figcaption>
+                    </figure>
+                    <figure><img src="images/vic-falls-400.webp" alt="Adventure2" loading="lazy">
+                        <figcaption>Zambezi Sunset</figcaption>
+                    </figure>
+                    <figure><img src="images/matobo-400.webp" alt="Adventure3" loading="lazy">
+                        <figcaption>Matopos</figcaption>
+                    </figure>
+                </div>
+
+                <div class="purpose-container">
+
+                    <div class="purpose">
+                        <h3>Purpose</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni sapiente, beatae dolor esse
+                            sint odio saepe natus. Eveniet soluta explicabo totam quasi non at maiores animi provident
+                            officiis quae repudiandae neque delectus sed quam velit possimus, cum id placeat veritatis
+                            est ratione fugit laborum? Repudiandae sapiente numquam ipsum fugiat aspernatur??
+                            <a href="#" class="paragraph-link">Learn more</a>
+                        </p>
+                        <img src="images/hwange-400.webp" alt="Trip one" loading="lazy">
+                    </div>
+
+                    <div class="purpose">
+                        <h3>Why Should You Join</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam molestias similique unde illo,
+                            voluptate, adipisci placeat voluptatem aut eveniet blanditiis dolore laudantium ducimus non
+                            sequi, dolorem consequuntur rerum. Suscipit beatae quas minima a rerum optio voluptate
+                            vitae, corporis impedit! Aspernatur voluptate impedit veniam consequuntur hic rerum
+                            similique corrupti sit dolorum.
+                            <a href="#" class="paragraph-link">Learn more</a>
+                        </p>
+                        <img src="images/bulawayo-400.webp" alt="Trip one" loading="lazy">
+                    </div>
+
+                </div>
+
+
+
+            </div>
         </div>
 
-        <h1>WDD 230: Web Frontend Development</h1>
-
-
-        <hr>
-        <section class="card" id="card1">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="https://codepen.io/Divine-Jigu/details/vYPmwdb" target="_blank">Responsive Menu using
-                        'Hamburger'</a></li>
-                <li><a href="week02/bom.html" target="_blank">Favorite Book of Mormon Chapters</a></li>
-                <li>Week 03: <a href="week03/images/landscape.webp" target="_blank">WebP</a></li>
-                <li>Week 03: <a href="week03/lazyload.html"> Lazy Loading images</a></li>
-                <li>Week 03: <a href="week03/bom/bom.html"> Web Storage API - localStorage</a></li>
-            </ul>
-        </section>
-        <section class="card" id="card2">
-            <h2>Information</h2>
-            <ul>
-                <li>Weather</li>
-                <li>Number of visits to the page: <span class="visits"></span></li>
-            </ul>
-        </section>
 
     </main>
 
@@ -99,11 +160,11 @@
     <footer>
         <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
         <p id="lastModified"></p>
-        <p><a href="https://www.facebook.com" target="_blank"><img src="images/img-facebook-icon.webp" alt="facebook"
+        <p><a href="https://www.facebook.com" target="_blank"><img src="../images/img-facebook-icon.webp" alt="facebook"
                     loading="lazy"></a></p>
     </footer>
 
-    <script src="scripts/getDates.js"></script>
+    <script src="scripts/getDate.js"></script>
     <script src="scripts/nav.js"></script>
     <script src="scripts/mode.js"></script>
     <script src="scripts/visits.js"></script>
