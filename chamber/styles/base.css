@@ -94,6 +94,7 @@ h1 {
     font-family: var(--secondary-font);
     margin: 1rem 0;
     font: 100;
+    font-size: medium;
 }
 
 h2,
@@ -182,11 +183,11 @@ section a {
 
 .discover-hero h1 {
     position: absolute;
-    top: 40%;
-    left: 10%;
-    right: 10%;
+    top: 5%;
+    left: 5%;
+    right: 5%;
     background-color: rgba(255, 255, 255, .4);
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
