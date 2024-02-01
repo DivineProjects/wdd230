@@ -117,22 +117,6 @@ main {
     color: var(--accent1-color);
 }
 
-.hero {
-    position: relative;
-}
-
-.hero picture {
-    width: 100%;
-    height: auto;
-
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .herolabel span {
     position: absolute;
     margin: 0;
@@ -403,5 +387,8 @@ footer img {
     cursor: pointer;
 }
 
+.hover:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+}
 
 /* css for CHAMBER OF MINES DISCOVERY PAGE  */
