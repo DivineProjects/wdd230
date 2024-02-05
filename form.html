@@ -56,10 +56,13 @@
             <fieldset>
                 <legend>Applicant Information</legend>
                 <label class="top">Username*<input type="text" name="fname" id="username" required></label>
+
                 <label class="top">Password* <input type="password" name="pwd" id="pwd" pattern="[A-Za-z0-9]{8,}"
                         title="Please enter at least 8 alphanumeric characters"></label>
                 <label class="top">Password repeated for confirmation* <input type="password" name="pwd" id="pwd2"
                         pattern="[A-Za-z0-9]{8,}" title="Please enter at least 8 alphanumeric characters"></label>
+                <label class="pwderror">Passwords do not match</label>
+
                 <label class="top">Email*<input type="email" name="email" placeholder="someone@byui\.edu"
                         pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
                         title="Please enter a valid email address from the byui.edu domain" required></label>

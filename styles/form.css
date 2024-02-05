@@ -35,10 +35,23 @@ form label.rate input {
     /* full width on small screens*/
     max-width: 20rem;
     /* for large screens*/
-    background-color: rgba(0, o, 0, 0.1)
+    background-color: rgba(0, o, 0, 0.1);
 }
 
-form input.submitBtn{
+form label.pwderror {
+    display: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+    /*-this allows the at least 44px to the touch*/
+    color: white;
+    width: 100%;
+    /* full width on small screens*/
+    max-width: 20rem;
+    /* for large screens*/
+    background-color: #9c2c13;
+}
+
+form input.submitBtn {
     border: none;
     background-color: #9c2c13;
     color: white;
@@ -49,15 +62,16 @@ form input.submitBtn{
     max-width: 20rem;
 }
 
-label.top input:focus{
-	background-color: rgba(255, 255, 255, 0.3);
+label.top input:focus {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* show left border red if input is empty / invalid*/
-form label.top input:required{
+form label.top input:required {
     border-left: 6px solid red;
 }
+
 /* changes border to green if input is valid*/
-form label.top input:required:valid{
+form label.top input:required:valid {
     border-left: 6px solid green;
 }
