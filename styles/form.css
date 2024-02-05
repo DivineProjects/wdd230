@@ -22,7 +22,8 @@ form div {
 }
 
 
-form label.top input {
+form label.top input,
+form input {
     display: block;
     font-size: 1rem;
     border: 1px solid #999;
@@ -37,9 +38,6 @@ form label.top input {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-form label.rate{
-    display: block;
-}
 
 form label.pwderror {
     display: none;
@@ -68,6 +66,7 @@ form input.submitBtn {
 form output {
     padding-left: 2px;
     color: #445ba9;
+    font-size: 1rem;
 }
 
 label.top input:focus {
