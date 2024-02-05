@@ -35,7 +35,7 @@ form label.rate input {
     /* full width on small screens*/
     max-width: 20rem;
     /* for large screens*/
-    background-color: rgba(0, o, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 form label.pwderror {
