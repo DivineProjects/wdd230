@@ -22,8 +22,7 @@ form div {
 }
 
 
-form label.top input,
-form label.rate input {
+form label.top input {
     display: block;
     font-size: 1rem;
     border: 1px solid #999;
@@ -36,6 +35,10 @@ form label.rate input {
     max-width: 20rem;
     /* for large screens*/
     background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.rate{
+    display: block;
 }
 
 form label.pwderror {
@@ -62,6 +65,11 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
+form output {
+    padding-left: 2px;
+    color: #445ba9;
+}
+
 label.top input:focus {
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -70,6 +78,7 @@ label.top input:focus {
 form label.top input:required {
     border-left: 6px solid red;
 }
+
 
 /* changes border to green if input is valid*/
 form label.top input:required:valid {

@@ -70,10 +70,12 @@
 
             <fieldset>
                 <legend>Page Rating</legend>
-                <div>Rating</div>
-                <label class="rate">Rating Value: <output id="value"></output>
-                    <input type="range" min="1" max="10" step="1" value="5" list="ratings" id="rating" />
-                </label>
+
+                <div class="rate">
+                    Rating: <output id="value"></output>
+                    <label for="rating" class="rate"> </label>
+                    <input type="range" min="1" max="10" step="1" value="5" list="ratings" name="rating" id="rating">
+                </div>
 
                 <datalist id="ratings">
                     <option value="1">1</option>
@@ -88,10 +90,8 @@
                     <option value="10">10</option>
                 </datalist>
 
-
             </fieldset>
-
-            <input type="submit" value="Propose My Cource" class="submitBtn">
+            <input type="submit" value="Apply" class="submitBtn">
 
         </form>
 
