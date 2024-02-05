@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Applying the concepts by adding an HTML frontend form.">
+    <meta name="author" content="Divine Jigu">
+
+    <!--  Essential META Tags -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Buawayo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.facebook.com">
+    <meta property="og:image"
+        content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development course assignment portal for Divine Jigu">
+    <meta property="og:site_name" content="Divine Jigu">
+    <meta property="fb:app_id" content="your_app_id">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/jiguprofile.jpg" alt="Divine Jigu Profile">
+        <span>Divine Jigu</span>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+
+    <nav>
+        <button aria-label="Hamburger Menu" id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html" class="active">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <form action="record.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">Username*<input type="text" name="fname" id="username" required></label>
+                <label class="top">Password* <input type="password" name="pwd" id="pwd" pattern="[A-Za-z0-9]{8,}"
+                        title="Please enter at least 8 alphanumeric characters"></label>
+                <label class="top">Password repeated for confirmation* <input type="password" name="pwd" id="pwd2"
+                        pattern="[A-Za-z0-9]{8,}" title="Please enter at least 8 alphanumeric characters"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@byui\.edu"
+                        pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        title="Please enter a valid email address from the byui.edu domain" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Page Rating</legend>
+                <div>Rating</div>
+                <label class="rate">Rating Value: <output id="value"></output></div>
+                    <input id="pi_input" type="range" min="1" max="10" step="1" value="5" list="ratings" id="rating" />
+                </label>
+
+                <datalist id="ratings">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+
+            </fieldset>
+
+            <input type="submit" value="Propose My Cource" class="submitBtn">
+
+        </form>
+
+
+
+
+
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
+        <p id="lastModified"></p>
+        <p><a href="https://www.facebook.com" target="_blank"><img src="images/img-facebook-icon.webp" alt="facebook"
+                    loading="lazy"></a></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+
+</html>
