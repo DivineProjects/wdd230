@@ -283,6 +283,79 @@ iframe {
     color: var(--primary-color);
 }
 
+/*----------- FORM --------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+}
+
+form legend {
+    color: #445ba9;
+    margin: 0 1rem;
+    padding: 0.5rem 2%;
+    text-align: center;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    /*-this allows the at least 44px to the touch*/
+    color: #555;
+    width: 100%;
+    /* full width on small screens*/
+    max-width: 20rem;
+    /* for large screens*/
+    background-color: rgba(0, o, 0, 0.1)
+}
+
+
+form label.sbs {
+    display: block;
+    padding: 0.75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+/* show left border red if input is empty / invalid*/
+form label.top input:required {
+    border-left: 6px solid red;
+}
+
+/* changes border to green if input is valid*/
+form label.top input:required:valid {
+    border-left: 6px solid green;
+}
+
+.subscription {
+    display: none;
+}
+
 footer {
     color: var(--primary-color);
     padding: 20px;

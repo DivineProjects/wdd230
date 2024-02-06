@@ -263,6 +263,60 @@
         color: #2c5777;
     }
 
+    /* FORM */
+
+    .form-container {
+        grid-column: 1 / 2;
+        /* Take up half of the available space */
+        margin-right: 20px;
+    }
+
+    form label.sbs {
+        padding: 0.4rem 0;
+    }
+
+    .subscription {
+        grid-column: 2/3;
+    }
+
+    .subscription div {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .subscription div h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .subscription div ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .subscription div ul li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    /* Styling for each subscription class */
+    .np {
+        background-color: #f0f0f0;
+    }
+
+    .bronze {
+        background-color: #ffd700;
+    }
+
+    .silver {
+        background-color: #c0c0c0;
+    }
+
+    .gold {
+        background-color: #ffd700;
+        color: #fff;
+    }
 
 
 }
