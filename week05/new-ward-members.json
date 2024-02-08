@@ -1,0 +1,18 @@
+{
+    "family-name": "Smith",
+    "date-arrived": "2022-10-31T09:00:00.594Z",
+    "visited": false,
+    "members": [
+        {
+            "name": "john",
+            "gender": "male",
+            "birthdate": "2020-01-01"
+        },
+        {
+            "name": "Sara",
+            "gender": "female",
+            "birthdate": "2023-01-01"
+        }
+    ]
+
+}
