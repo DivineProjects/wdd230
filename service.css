@@ -1,0 +1,78 @@
+@media (min-width: 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 0.5rem;
+    }
+
+
+    form label.sbs {
+        padding: 0.4rem 0;
+    }
+
+    main.form-container {
+        grid-column: 1 / 2;
+        width: 100%;
+
+    }
+
+    .subscription {
+        grid-column: 2/3;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0.2rem 2%;
+    }
+
+    .subscription div {
+        display: block;
+        padding-top: 1rem;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        ;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .subscription div h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .subscription div ul {
+        list-style: circle;
+        padding-left: 6%;
+    }
+
+    .subscription div ul li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    /* Styling for each subscription class */
+    .np {
+        background-color: #f0f0f0;
+    }
+
+    .bronze {
+        background-color: #ffd700;
+    }
+
+    .silver {
+        background-color: #c0c0c0;
+    }
+
+    .gold {
+        background-color: #ffd700;
+
+    }
+
+
+
+
+
+
+
+
+
+}

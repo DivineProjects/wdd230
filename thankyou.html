@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <meta name="description" content="Web page gives a thank you note.">
+    <meta name="author" content="Divine Jigu">
+
+    <!--  Essential META Tags -->
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Buawayo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.facebook.com">
+    <meta property="og:image"
+        content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png">
+    <meta property="og:description"
+        content="WDD 230 - Web Frontend Development course assignment portal for Divine Jigu">
+    <meta property="og:site_name" content="Divine Jigu">
+    <meta property="fb:app_id" content="your_app_id">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/jiguprofile.jpg" alt="Divine Jigu Profile">
+        <span>Divine Jigu</span>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+
+    <nav>
+        <button aria-label="Hamburger Menu" id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main class="main-thank-you">
+        <div class="thankyou">
+            <h1>Thank You!! &#128522</h1>
+            <p>Thank you for applying. We appreciate your time and effort! </p>
+            <p>We will get back to you within a week with a response.</p>
+        </div>
+
+
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p> &copy; <span id="currentYear"></span> | Divine Jigu 📍 Bulawayo, Zimbabwe</p>
+        <p id="lastModified"></p>
+        <p><a href="https://www.facebook.com" target="_blank"><img src="images/img-facebook-icon.webp" alt="facebook"
+                    loading="lazy"></a></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/mode.js"></script>
+    <script src="scripts/formvalidation.js"></script>
+</body>
+
+</html>

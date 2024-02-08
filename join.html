@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Divine Jigu] - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development course assignment portal for Divine Jigu">
+    <title>Join</title>
+    <meta name="description"
+        content="Web page allows prospective member to apply and join the Bulawayo Chamber of Commerce through a membership application form.">
     <meta name="author" content="Divine Jigu">
 
     <!--  Essential META Tags -->
@@ -43,17 +44,17 @@
     <nav>
         <button id="menu"></button>
         <ul class="navigation">
-            <li><a class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <main class="main-form">
-        <div >
-            <form class="form-container" action="thanks.html" method="get">
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
                 <fieldset>
-                    <legend class="top">Applicant Information</legend>
+                    <legend class="top">Joining Information</legend>
                     <label class="top">First Name*<input type="text" name="fname" required id="fname"></label>
                     <label class="top">Last Name*<input type="text" name="lname" required id="lname"></label>
                     <label class="top">Position <input type="text" id="position" name="position"
@@ -81,42 +82,46 @@
                 <label class="sbs"><input type="hidden" id="timestamp" name="timestamp" value=""></label>
                 <input type="submit" value="Join" class="submitBtn">
             </form>
-            <div class="subscription">
-                <div class="np">
-                    <h3>No Plan</h3>
-                    <ul>
-                        <li>No access to special events</li>
-                        <li>No discounts on training programs</li>
-                        <li>No advertising opportunities</li>
-                    </ul>
-                </div>
-                <div class="bronze">
-                    <h3>Bronze Membership</h3>
-                    <ul>
-                        <li>Access to select special events</li>
-                        <li>10% discount on training programs</li>
-                        <li>Basic advertising opportunities</li>
-                    </ul>
-                </div>
-                <div class="silver">
-                    <h3>Silver Membership</h3>
-                    <ul>
-                        <li>Access to most special events</li>
-                        <li>15% discount on training programs</li>
-                        <li>Enhanced advertising opportunities</li>
-                    </ul>
-                </div>
-                <div class="gold">
-                    <h3>Gold Membership</h3>
-                    <ul>
-                        <li>Priority access to all special events</li>
-                        <li>20% discount on training programs</li>
-                        <li>Premium advertising opportunities</li>
-                    </ul>
-                </div>
-            </div>
-            
         </div>
+
+
+
+        <div class="subscription">
+            <div class="np">
+                <h3>Non Profit Membership </h3>
+                <ul>
+                    <li>No access to special events</li>
+                    <li>No discounts on training programs</li>
+                    <li>No advertising opportunities</li>
+                </ul>
+            </div>
+            <div class="bronze">
+                <h3>Bronze Membership</h3>
+                <ul>
+                    <li>Access to select special events</li>
+                    <li>10% discount on training programs</li>
+                    <li>Basic advertising opportunities</li>
+                </ul>
+            </div>
+            <div class="silver">
+                <h3>Silver Membership</h3>
+                <ul>
+                    <li>Access to most special events</li>
+                    <li>15% discount on training programs</li>
+                    <li>Enhanced advertising opportunities</li>
+                </ul>
+            </div>
+            <div class="gold">
+                <h3>Gold Membership</h3>
+                <ul>
+                    <li>Priority access to all special events</li>
+                    <li>20% discount on training programs</li>
+                    <li>Premium advertising opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+
 
     </main>
 
