@@ -294,13 +294,13 @@ iframe {
 
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid;
     border-radius: 10px;
     padding: 0.5rem 2%;
 }
 
 form legend {
-    color: #445ba9;
+    color: rgb(2, 51, 81);
     margin: 0 1rem;
     padding: 0.5rem 2%;
     text-align: center;
@@ -310,7 +310,7 @@ form label.top,
 form div {
     display: block;
     padding-top: 1rem;
-    color: #445ba9;
+    color: rgb(2, 51, 81);
     font-size: 0.8rem;
 }
 
@@ -341,7 +341,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: #445ba9;
+    background-color: rgb(2, 51, 81);
     color: white;
     border-radius: 1rem;
     padding: 0.75rem 1.5rem;
