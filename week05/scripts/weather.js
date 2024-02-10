@@ -3,9 +3,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-
 const url = 'https://api.openweathermap.org/data/2.5/onecall?lat={49.750265627063186}&lon={6.6315950909878545lon}&appid={960a952c2137da20cfdb8348a4ed75b1}';
-
 
 async function apiFetch() {
 
