@@ -222,7 +222,10 @@ section a {
 #card2 {
     text-align: center;
 }
-
+#card2 img {
+    display: block;
+    margin: 0 auto;
+}
 
 hr {
     border: none;
