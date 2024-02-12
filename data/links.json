@@ -1,0 +1,93 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "mQueries"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/bom.html",
+                    "title": "Favorite Book of Mormon Chapters"
+                },
+                {
+                    "url": "https://codepen.io/Divine-Jigu/details/vYPmwdb",
+                    "title": "Responsive Menu using 'Hamburger'"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Lazy Loading images"
+                },
+                {
+                    "url": "week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "week03/bom/bom.html",
+                    "title": "Web Storage API - localStorage"
+                },
+                {
+                    "url": "chamber/discover.html",
+                    "title": "The Chamber Discover Page"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/Divine-Jigu/pen/XWGEgym?editors=1100",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "images/combinator-exercises-w4.webp",
+                    "title": "Combinator Exercises"
+                },
+                {
+                    "url": "week04/tablebuild.html",
+                    "title": "HTML Tables for Data Presentation"
+                },
+                {
+                    "url": "week04/form-start/index.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "join.html",
+                    "title": "Project Milestone - The Chamber Join Page"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+}
