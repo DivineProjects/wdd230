@@ -31,14 +31,6 @@ function displayResults(data) {
 
 apiFetch();
 
-
-
-
-
-
-
-
-
 // Dynamic Activity Links
 
 const baseURL = "https://divineprojects.github.io/wdd230/";
