@@ -5,7 +5,7 @@ const weather = document.querySelector('.weather');
 key = '57b35b35ea4398840f483c29f14b8533';
 lattitude = '-20.1525730567213';
 longitude = '28.58308545902036';
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lattitude}&lon=${longitude}&appid=${key}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lattitude}&lon=${longitude}&appid=${key}&units=metric`;
 
 
 async function apiFetch() {
@@ -26,7 +26,7 @@ async function apiFetch() {
 
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weather.innerHTML = `<img src="${iconsrc}" alt="${data.weather[0].description}" id="imgWeather"> ${data.main.temp}&deg;K - ${data.weather[0].description}`;
+    weather.innerHTML = `<img src="${iconsrc}" alt="${data.weather[0].description}">  <span id="weather-disc">${data.weather[0].description}</span> <span id="imgWeather">${data.main.temp}&deg;C </span> <br>`;
 }
 
 apiFetch();

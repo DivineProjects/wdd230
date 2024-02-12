@@ -217,11 +217,26 @@ section a {
 .card ul {
     list-style-type: none;
     padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+#imgWeather {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#weather-disc {
+    display: block;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
 }
 
 #card2 {
     text-align: center;
 }
+
 #card2 img {
     display: block;
     margin: 0 auto;
