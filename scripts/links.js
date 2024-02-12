@@ -1,6 +1,6 @@
 
 const baseURL = "https://divineprojects.github.io/wdd230/";
-const linksURL = "https://divineprojects.github.io/wdd230/data/links.js"
+const linksURL = "https://divineprojects.github.io/wdd230/data/links.json"
 const card = document.querySelector('#card1');
 
 async function getLinks() {
