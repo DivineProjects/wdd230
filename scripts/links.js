@@ -1,6 +1,6 @@
 
 const baseURL = "https://divineprojects.github.io/wdd230/";
-const linksURL = "data/links.json"; // "https://divineprojects.github.io/wdd230/data/links.js"
+const linksURL = "https://divineprojects.github.io/wdd230/data/links.js"
 const card = document.querySelector('#card1');
 
 async function getLinks() {
@@ -30,7 +30,6 @@ function displayLinks(weeks) {
         });
 
         li.innerHTML = ancher;
-        console.log(ancher);
         ul.appendChild(li);
         card.appendChild(ul);
 
