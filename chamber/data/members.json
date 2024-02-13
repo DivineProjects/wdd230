@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "names": "Company 1",
+            "addresses": "12 Road ",
+            "phone": "0700 000 001",
+            "URLs": "//company1.com",
+            "image": "//github.com",
+            "m-level": "bronze",
+            "industry": "finance"
+        },
+        {
+            "names": "Company 2",
+            "addresses": "13 Kelvin",
+            "phone": "0700 000 002",
+            "URLs": "//company2.com",
+            "image": "//github.com",
+            "m-level": "gold",
+            "industry": "Mining"
+        },
+        {
+            "names": "Company 3",
+            "addresses": "14 Belfast",
+            "phone": "0700 000 003",
+            "URLs": "//company2.com",
+            "image": "//github.com",
+            "m-level": "silver",
+            "industry": "food & beverage"
+        },
+        {
+            "names": "Company 3",
+            "addresses": "12 Road ",
+            "phone": "0700 000 004",
+            "URLs": "//company3.com",
+            "image": "//github.com",
+            "m-level": "bronze",
+            "industry": "insuarance"
+        },
+        {
+            "names": "Company 4",
+            "addresses": "15 Park",
+            "phone": "0700 000 005",
+            "URLs": "//company4.com",
+            "image": "//github.com",
+            "m-level": "gold",
+            "industry": "finance"
+        },
+        {
+            "names": "Company 5",
+            "addresses": "16 Road",
+            "phone": "0700 000 005",
+            "URLs": "//company5.com",
+            "image": "//github.com",
+            "m-level": "gold",
+            "industry": "finance"
+        },
+        {
+            "names": "Company 6",
+            "addresses": "17 Cecil",
+            "phone": "0700 000 006",
+            "URLs": "//company7.com",
+            "image": "//github.com",
+            "m-level": "bronze",
+            "industry": "sports"
+        },
+        {
+            "names": "Company 7",
+            "addresses": "19 House",
+            "phone": "0700 000 007",
+            "URLs": "//company8.com",
+            "image": "//github.com",
+            "m-level": "silver",
+            "industry": "tourism"
+        },
+        {
+            "names": "Company 8",
+            "addresses": "20 Downward",
+            "phone": "0700 000 008",
+            "URLs": "//company8.com",
+            "image": "//github.com",
+            "m-level": "bronze",
+            "industry": "construction"
+        }
+    ]
+}
