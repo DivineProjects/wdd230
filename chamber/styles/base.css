@@ -562,20 +562,12 @@ form input.submitBtn {
 
 .directGrid section {
     text-align: center;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .directGrid section>* {
     margin: 0.1rem;
 }
-
-/* .directCard {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    box-shadow: none;
-    border-radius: 0;
-} */
 
 .directGrid img {
     width: 100%;
@@ -607,7 +599,8 @@ form input.submitBtn {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 0.25rem;
+    margin-top: 0.25rem;
+    padding: 0.5rem;
 }
 
 .list section>* {
@@ -619,13 +612,14 @@ form input.submitBtn {
     /* smaller viewports only */
 }
 
-.directGrid p {
+
+.list p {
     font-size: 0.8rem;
     text-transform: capitalize;
 }
 
 
-.directGrid a {
+.list a {
     font-size: 0.85rem;
     color: navy;
     text-transform: lowercase;
@@ -635,35 +629,7 @@ form input.submitBtn {
     background-color: rgba(255, 255, 255, .4);
 }
 
-/* 
-.directCardLV {
-    border: 1px solid purple;
-    margin-top: 0.8rem;
-    width: 100%;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0.5rem 0.5rem;
-}
-
-
-.directCardLV span {
-    display: block;
-    font-size: 0.8rem;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0.1rem 0 0 0.5rem;
-}
-
-.directCardLV a {
-    color: #0047ab;
-}
-
-.directCardLV.cimg {
-    display: none;
-    width: 100%;
-} */
-
-@media (max-width: 599px) {
+@media (max-width: 650px) {
     .subscription {
         display: none;
     }

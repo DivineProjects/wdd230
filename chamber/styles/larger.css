@@ -1,4 +1,4 @@
-@media (min-width: 655px) {
+@media (min-width: 651px) {
     main {
         display: grid;
         grid-template-columns: 1fr;
@@ -187,11 +187,11 @@
 
     /*DIRECTORY PAGE*/
 
-
+    /* 
     .list {
-        display: flex;
+        display: gr;
         flex-direction: column;
-    }
+    } */
 
 
     .list section {
