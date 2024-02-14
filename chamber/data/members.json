@@ -4,7 +4,7 @@
         "addresses": "12 Road ",
         "phone": "0700 000 001",
         "URLs": "https://company1.com",
-        "image": "//github.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company1.png",
         "mlevel": "bronze",
         "industry": "finance"
     },
@@ -12,8 +12,8 @@
         "name": "Company 2",
         "addresses": "13 Kelvin",
         "phone": "0700 000 002",
-        "URLs": "//company2.com",
-        "image": "//github.com",
+        "URLs": "https://company2.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company2.png",
         "mlevel": "gold",
         "industry": "Mining"
     },
@@ -21,63 +21,55 @@
         "name": "Company 3",
         "addresses": "14 Belfast",
         "phone": "0700 000 003",
-        "URLs": "//company2.com",
-        "image": "//github.com",
+        "URLs": "https://company3.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company3.png",
         "mlevel": "silver",
-        "industry": "food & beverage"
-    },
-    {
-        "name": "Company 3",
-        "addresses": "12 Road ",
-        "phone": "0700 000 004",
-        "URLs": "//company3.com",
-        "image": "//github.com",
-        "mlevel": "bronze",
-        "industry": "insuarance"
+        "industry": "Food & beverage"
     },
     {
         "name": "Company 4",
-        "addresses": "15 Park",
-        "phone": "0700 000 005",
-        "URLs": "//company4.com",
-        "image": "//github.com",
-        "mlevel": "gold",
-        "industry": "finance"
+        "addresses": "12 Road ",
+        "phone": "0700 000 004",
+        "URLs": "https://company4.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company4.png",
+        "mlevel": "bronze",
+        "industry": "Insuarance"
     },
     {
         "name": "Company 5",
-        "addresses": "16 Road",
+        "addresses": "12 Steelrod ",
         "phone": "0700 000 005",
-        "URLs": "//company5.com",
-        "image": "//github.com",
-        "mlevel": "gold",
-        "industry": "finance"
+        "URLs": "https://company.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company5.png",
+        "mlevel": "bronze",
+        "industry": "Tourism"
     },
     {
         "name": "Company 6",
-        "addresses": "17 Cecil",
-        "phone": "0700 000 006",
-        "URLs": "//company7.com",
-        "image": "//github.com",
-        "mlevel": "bronze",
-        "industry": "sports"
+        "addresses": "6 North",
+        "phone": "0700 000 002",
+        "URLs": "https://company2.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company6.png",
+        "mlevel": "gold",
+        "industry": "Construction"
     },
     {
         "name": "Company 7",
-        "addresses": "19 House",
-        "phone": "0700 000 007",
-        "URLs": "//company8.com",
-        "image": "//github.com",
+        "addresses": "7 South",
+        "phone": "0700 000 003",
+        "URLs": "https://company3.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company7.png",
         "mlevel": "silver",
-        "industry": "tourism"
+        "industry": "Entertainment"
     },
     {
         "name": "Company 8",
-        "addresses": "20 Downward",
-        "phone": "0700 000 008",
-        "URLs": "//company8.com",
-        "image": "//github.com",
+        "addresses": "8 West",
+        "phone": "0700 000 004",
+        "URLs": "https://company4.com",
+        "imageurl": "https://divineprojects.github.io/wdd230/chamber/data/images/company8.png",
         "mlevel": "bronze",
-        "industry": "construction"
+        "industry": "Farming"
     }
+    
 ]

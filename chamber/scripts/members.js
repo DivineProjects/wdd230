@@ -1,8 +1,7 @@
 
-const directory = document.querySelector('.directory');
+const directory = document.querySelector('.directGrid');
 
-const url = "data/members.json";
-
+const url = "https://divineprojects.github.io/wdd230/chamber/data/members.json";
 
 async function apiFetch() {
 
@@ -10,10 +9,8 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayMembersLV(data)
-            // displayMembersWider(data);
-            // displayMembers(data); // uncomment when ready
+            // console.log(data);
+            displayMembers(data); // uncomment when ready
         } else {
             throw Error(await response.text());
         }
@@ -22,11 +19,11 @@ async function apiFetch() {
     };
 };
 
-
+// call directory list view
 const displayMembers = (members) => {
     // card build code goes here
     members.forEach((member) => {
-        let portrait = document.createElement('img');
+        let cimg = document.createElement('img');
         let name = document.createElement('p');
         let address = document.createElement('p');
         let phone = document.createElement('p');
@@ -38,19 +35,18 @@ const displayMembers = (members) => {
         name.textContent = member.name;
         address.textContent = member.addresses;
         phone.textContent = member.phone;
-        industry.textContent = `Industry: ${member.industry}`;
-        mlevel.textContent = `Membership Level: ${member.mlevel}`;
+        industry.textContent = member.industry;
+        mlevel.textContent = member.mlevel;
         url.innerHTML = `<a href="${member.URLs}" target="_blank">${member.URLs}</a>`;
 
-        card.setAttribute('class','directCard');
+        name.setAttribute('class', 'cname');
 
-        console.log(member.name);
-        /*  portrait.setAttribute('src', member.imageurl);
-         portrait.setAttribute('loading', 'lazy');
-         portrait.setAttribute('alt', `Portrait of ${member.name} `);
-         portrait.setAttribute('width', '340');
-         portrait.setAttribute('height', '440'); */
+        // console.log(member.name);
+        cimg.setAttribute('src', member.imageurl);
+        cimg.setAttribute('loading', 'lazy');
+        cimg.setAttribute('alt', `cimg of ${member.name} `);
 
+        card.appendChild(cimg);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);
@@ -59,98 +55,27 @@ const displayMembers = (members) => {
         card.appendChild(mlevel);
 
         directory.appendChild(card);
-        // card.appendChild(portrait);
-
-        //cards.appendChild(card);
+        //
     });
 };
 
+apiFetch();
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
-const displayMembersWider = (members) => {
-    // card build code goes here
-    members.forEach((member) => {
-        let portrait = document.createElement('img');
-        let name = document.createElement('span');
-        let address = document.createElement('span');
-        let phone = document.createElement('span');
-        let industry = document.createElement('span');
-        let mlevel = document.createElement('span');
-        let url = document.createElement('span');
-        let card = document.createElement('section');
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-        name.textContent = member.name;
-        address.textContent = member.addresses;
-        phone.textContent = member.phone;
-        industry.textContent = `Industry: ${member.industry}`;
-        mlevel.textContent = `Membership Level: ${member.mlevel}`;
-        url.innerHTML = `<a href="${member.URLs}" target="_blank">${member.URLs}</a>`;
+gridbutton.addEventListener("click", () => {
+    // example using arrow function
+    display.classList.add("directGrid");
+    display.classList.remove("list");
+});
 
-        card.setAttribute('class','directCard');
+listbutton.addEventListener("click", showList); // example using defined function
 
-        console.log(member.name);
-        /*  portrait.setAttribute('src', member.imageurl);
-         portrait.setAttribute('loading', 'lazy');
-         portrait.setAttribute('alt', `Portrait of ${member.name} `);
-         portrait.setAttribute('width', '340');
-         portrait.setAttribute('height', '440'); */
-
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(url);
-        card.appendChild(industry);
-        card.appendChild(mlevel);
-
-        directory.appendChild(card);
-        // card.appendChild(portrait);
-
-        //cards.appendChild(card);
-    });
-};
-
-
-// call directory list view
-const displayMembersLV = (members) => {
-    // card build code goes here
-    members.forEach((member) => {
-        let portrait = document.createElement('img');
-        let name = document.createElement('span');
-        let address = document.createElement('span');
-        let phone = document.createElement('span');
-        let industry = document.createElement('span');
-        let mlevel = document.createElement('span');
-        let url = document.createElement('span');
-        let card = document.createElement('section');
-
-        name.textContent = member.name;
-        address.textContent = member.addresses;
-        phone.textContent = member.phone;
-        industry.textContent = `Industry: ${member.industry}`;
-        mlevel.textContent = `Membership Level: ${member.mlevel}`;
-        url.innerHTML = `<a href="${member.URLs}" target="_blank">${member.URLs}</a>`;
-
-        card.setAttribute('class','directCardLV');
-
-        console.log(member.name);
-        /*  portrait.setAttribute('src', member.imageurl);
-         portrait.setAttribute('loading', 'lazy');
-         portrait.setAttribute('alt', `Portrait of ${member.name} `);
-         portrait.setAttribute('width', '340');
-         portrait.setAttribute('height', '440'); */
-
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(url);
-        card.appendChild(industry);
-        card.appendChild(mlevel);
-
-        directory.appendChild(card);
-        // card.appendChild(portrait);
-
-        //cards.appendChild(card);
-    });
-};
-
-apiFetch() 
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
+}

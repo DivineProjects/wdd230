@@ -137,7 +137,7 @@ section {
     margin: 0.5rem 0;
     overflow: hidden;
     border: 1px solid;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -291,11 +291,7 @@ hr {
     margin: 0.25rem auto;
 }
 
-select {
-    padding: 0.5rem;
-    width: 100%;
-    border: 1px solid rgb(218, 218, 227);
-}
+
 
 .paragraph-link {
     display: inline-block;
@@ -543,42 +539,102 @@ form input.submitBtn {
 
 /*DIRECTORY PAGE GRID VIEW*/
 
+.directMenu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: inherit;
+    text-align: center;
+}
 
-.directory {
+.directMenu button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+
+.directGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.2rem;
     align-items: center;
 }
 
-.directCard {
-    margin: 0.2rem auto;
-    width: 100%;
+.directGrid section {
+    text-align: center;
+}
+
+.directGrid section>* {
+    margin: 0.1rem;
+}
+
+/* .directCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     box-shadow: none;
     border-radius: 0;
+} */
+
+.directGrid img {
+    width: 100%;
 }
 
-.directCard p {
-    align-items: center;
+.directGrid p {
+    /* text-align: center; */
     font-size: 0.8rem;
-    margin: 0 auto;
-    padding: 0.1rem 0 0 0.5rem;
+    padding: 0.2rem 0 0 0.5rem;
+    text-transform: capitalize;
 }
 
-.directCard span {
-    display: block;
+.directGrid a {
+    font-size: 0.85rem;
+    color: navy;
+    text-transform: lowercase;
+}
+
+
+/*DIRECTORY PAGE LIST VIEW (LV) MOBILE*/
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.list section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0.25rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+    /* smaller viewports only */
+}
+
+.directGrid p {
     font-size: 0.8rem;
-    margin: 0 auto;
-    padding: 0.1rem 0 0 0.5rem;
-}
-
-.directCard a {
-    color: #0047ab;
+    text-transform: capitalize;
 }
 
 
-/*DIRECTORY PAGE LLIST VIEW (LV) MOBILE*/
+.directGrid a {
+    font-size: 0.85rem;
+    color: navy;
+    text-transform: lowercase;
+}
 
+.list section:nth-child(even) {
+    background-color: rgba(255, 255, 255, .4);
+}
+
+/* 
 .directCardLV {
     border: 1px solid purple;
     margin-top: 0.8rem;
@@ -600,6 +656,11 @@ form input.submitBtn {
 .directCardLV a {
     color: #0047ab;
 }
+
+.directCardLV.cimg {
+    display: none;
+    width: 100%;
+} */
 
 @media (max-width: 599px) {
     .subscription {
