@@ -555,13 +555,14 @@ form input.submitBtn {
 
 .directGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
     align-items: center;
 }
 
 .directGrid section {
     text-align: center;
+    max-width: 400px;
 }
 
 .directGrid section>* {
