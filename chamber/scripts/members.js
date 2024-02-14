@@ -10,7 +10,7 @@ async function apiFetch() {
         if (response.ok) {
             const data = await response.json();
             // console.log(data);
-            displayMembers(data); // uncomment when ready
+            displayMembers(data); 
         } else {
             throw Error(await response.text());
         }
@@ -21,7 +21,6 @@ async function apiFetch() {
 
 // call directory list view
 const displayMembers = (members) => {
-    // card build code goes here
     members.forEach((member) => {
         let cimg = document.createElement('img');
         let name = document.createElement('p');
@@ -38,11 +37,7 @@ const displayMembers = (members) => {
         industry.textContent = member.industry;
         mlevel.textContent = member.mlevel;
         url.innerHTML = `<a href="${member.URLs}" target="_blank">${member.URLs}</a>`;
-        console.log(url);
 
-        // name.setAttribute('class', 'cname');
-
-        // console.log(member.name);
         cimg.setAttribute('src', member.imageurl);
         cimg.setAttribute('loading', 'lazy');
         cimg.setAttribute('alt', `cimg of ${member.name} `);
@@ -64,19 +59,18 @@ apiFetch();
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+const display = document.querySelector("#directory");
 
 gridbutton.addEventListener("click", () => {
-    // example using arrow function
-    display.classList.add("grid");
+    display.classList.add("directGrid");
     display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
     display.classList.add("list");
-    display.classList.remove("grid");
+    display.classList.remove("directGrid");
 }
+
+
