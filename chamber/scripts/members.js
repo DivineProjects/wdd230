@@ -38,8 +38,9 @@ const displayMembers = (members) => {
         industry.textContent = member.industry;
         mlevel.textContent = member.mlevel;
         url.innerHTML = `<a href="${member.URLs}" target="_blank">${member.URLs}</a>`;
+        console.log(url);
 
-        name.setAttribute('class', 'cname');
+        // name.setAttribute('class', 'cname');
 
         // console.log(member.name);
         cimg.setAttribute('src', member.imageurl);
