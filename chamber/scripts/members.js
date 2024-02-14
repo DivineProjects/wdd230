@@ -70,7 +70,7 @@ const display = document.querySelector("article");
 
 gridbutton.addEventListener("click", () => {
     // example using arrow function
-    display.classList.add("directGrid");
+    display.classList.add("grid");
     display.classList.remove("list");
 });
 
