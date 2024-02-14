@@ -629,6 +629,11 @@ form input.submitBtn {
     background-color: rgba(255, 255, 255, .4);
 }
 
+.footer-h{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 @media (max-width: 650px) {
     .subscription {
         display: none;
