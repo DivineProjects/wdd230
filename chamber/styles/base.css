@@ -206,11 +206,12 @@ select {
 
 .card {
     margin: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .card p {
     align-items: center;
-    margin: auto;
+    margin: 0 auto;
     padding: 0.5rem;
 }
 
@@ -538,6 +539,67 @@ form input.submitBtn {
 }
 
 /* end thank you modification*/
+
+
+/*DIRECTORY PAGE GRID VIEW*/
+
+
+.directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.directCard {
+    margin: 0.2rem auto;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.directCard p {
+    align-items: center;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    padding: 0.1rem 0 0 0.5rem;
+}
+
+.directCard span {
+    display: block;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    padding: 0.1rem 0 0 0.5rem;
+}
+
+.directCard a {
+    color: #0047ab;
+}
+
+
+/*DIRECTORY PAGE LLIST VIEW (LV) MOBILE*/
+
+.directCardLV {
+    border: 1px solid purple;
+    margin-top: 0.8rem;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+
+.directCardLV span {
+    display: block;
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.1rem 0 0 0.5rem;
+}
+
+.directCardLV a {
+    color: #0047ab;
+}
 
 @media (max-width: 599px) {
     .subscription {

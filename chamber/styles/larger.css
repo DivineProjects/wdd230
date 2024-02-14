@@ -185,4 +185,33 @@
     }
 
 
+    /*DIRECTORY PAGE LLIST VIEW (LV) MOBILE*/
+    .directory {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.1rem;
+        align-items: center;
+
+    }
+
+    .directCardLV {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 0.1rem;
+        margin-top: 0.4rem;
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0.5rem 0.5rem;
+        border: 2px solid red;
+    }
+
+
+    .directCardLV span {
+        font-size: 0.8rem;
+        margin: 0 auto;
+        padding: 0.1rem 0 0 0.5rem;
+        border: 1px solid yellow;
+    }
+
+
 }
