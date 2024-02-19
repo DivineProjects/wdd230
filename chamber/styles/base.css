@@ -220,10 +220,244 @@ select {
     padding: 1rem;
 }
 
+
+
+/* WEATHER CARD */
+#imgWeather {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#weather-disc {
+    display: block;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    margin: 0.5rem auto;
+}
+
 #card2 {
     text-align: center;
 }
 
+#card2 img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* 
+.forecast {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.forecast:last-child {
+    border-bottom: none;
+}
+
+.time {
+    font-weight: bold;
+}
+
+.temperature {
+    color: #ff5722;
+}
+
+.description {
+    color: #666;
+    text-transform: capitalize;
+} */
+
+
+/* start testing */
+
+
+
+
+.cardContainer {
+    white-space: nowrap;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+}
+
+.cardContainer li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.setSpan {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 37px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+
+/* .dayCard {
+    outline: none;
+    border: none;
+    width: inherit;
+    font-family: inherit;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 108px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0;
+} */
+
+.mainFocust {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.headerFocust {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 4px 0;
+}
+
+.iconTempPart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 6px;
+}
+
+.iconTemp {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto !important;
+}
+
+.iconTempImg {
+    height: 400%;
+    width: 400%;
+    vertical-align: middle;
+    transform: scale(0.25);
+    transform-origin: top left;
+    pointer-events: none;
+}
+
+.temp {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 14px;
+    width: 0;
+    flex: 1 1 auto;
+}
+
+.infoPart {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.topInfo {
+    margin: 0 0 6px 0;
+}
+
+.temp {
+    font-weight: 400;
+    opacity: 0.8;
+    direction: ltr;
+    padding-left: 0.2rem;
+}
+
+.discWeather {
+    text-align: center;
+    font-size: 0.8rem;
+    /* line-height: 20px; */
+    /* position: relative; */
+    /* top: 1px; */
+    opacity: 0.8;
+    /* margin-left: 18px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    text-transform: capitalize;
+}
+
+.weather ul {
+    list-style-type: disc;
+}
+
+
+/* ADVERTISEMENT */
+
+#advertisements {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.advertisement {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.advertisement:last-child {
+    border-bottom: none;
+}
+
+
+
+.membership-gold {
+    color: gold;
+}
+
+.membership-silver {
+    color: silver;
+}
+
+
+
+/* BURNNER */
+#banner {
+    display: none;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    z-index: 1000;
+}
+
+#closeButton {
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    float: right;
+}
+
+/* FOOTER */
 
 hr {
     border: none;
@@ -629,7 +863,7 @@ form input.submitBtn {
     background-color: rgba(255, 255, 255, .4);
 }
 
-.footer-h{
+.footer-h {
     font-size: 1rem;
     font-weight: bold;
 }
