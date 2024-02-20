@@ -26,28 +26,29 @@ async function apiFetch() {
 
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-
+    // console.log(data.weather[0].description);
     // weather.innerHTML = `<img src="${iconsrc}" alt="${data.weather[0].description}">  <span id="weather-disc">${data.weather[0].description}</span> <span id="imgWeather">${data.main.temp}&deg;C </span> <br>`;
     weather.innerHTML = `
     <span class="setSpan">
-        <div class="mainFocust">
-            <p class="headerFocust">today</p>
-            <div class="iconTempPart">
-                <div class="iconTemp">
-                <img class="iconTempImg" src="${iconsrc}" alt="${data.weather[0].description}"> 
-                </div>
-                <div class="temp">
-                    <div class="infoPart topInfo">
-                        <div class="temp"> ${data.main.temp}&deg;C </div>
+                    <div class="mainFocust">
+                        <p class="headerFocust">today</p>
+                        <div class="iconTempPart">
+                            <div class="iconTemp">
+                                <img class="iconTempImg" src="${iconsrc}" alt="${data.weather[0].description}"></img>
+                            </div>
+                            <div class="temp">
+                                <div class="infoPart topInfo">
+                                    <div class="temper"> ${Math.round(data.main.temp)}</div>
+                                </div>
+                                <div class="infoPart topInfo">
+                                    <div class="discWeather">${data.weather[0].description}</div>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
-                    <div class="infoPart">
-                        <div class="discWeather">${data.weather[0].description}</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </span>
-`;
+                </span>
+    `;
 }
 
 apiFetch();
@@ -91,7 +92,7 @@ function displayLinks(weeks) {
     });
 }
 
-// getLinks();
+getLinks();
 
 
 const apiKey = 'YOUR_API_KEY';
@@ -127,6 +128,7 @@ function displayFocust(data) {
 
     // const day = new Date(data.list[0].dt).getDay();
     a = 8;
+    i = 0;
 
     data.list.forEach(forecast => {
         // const day = new Date(forecast.dt).getDay();
@@ -135,8 +137,9 @@ function displayFocust(data) {
         const iconsrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
 
         let li = document.createElement("li");
-        if (a % 8 === 0) {
+        if (a % 8 === 0 && i < 3) {
             const day = new Date(forecast.dt_txt).getDay();
+            i += 1;
             // days[day];
             // console.log(new Date(forecast.dt_txt));
             // console.log(days[day]);
@@ -153,10 +156,10 @@ function displayFocust(data) {
                             </div>
                             <div class="temp">
                                 <div class="infoPart topInfo">
-                                    <div class="temp"> ${forecast.main.temp}</div>
+                                    <div class="temper"> ${Math.round(forecast.main.temp)}</div>
                                 </div>
                                 <div class="infoPart topInfo">
-                                    <div class="temp">${forecast.main.temp_min}</div>
+                                    <div class="temper">${Math.round(forecast.main.temp_min)}</div>
                                 </div>
                             </div>
                         </div>
@@ -168,6 +171,7 @@ function displayFocust(data) {
         }
 
         a += 1;
+
     });
     // console.log(days[day]);
     // console.log(data.list[0].dt_txt);
@@ -185,7 +189,7 @@ apiFetch1();
 
 // const memberURL = "https://divineprojects.github.io/wdd230/data/members.json";
 const membersURL = "data/members.json";
-const cardAdvert = document.querySelector('#advertisements');
+const cardAdvert = document.querySelector('.advertisements');
 
 async function getAdvert() {
     const response = await fetch(membersURL);
@@ -213,11 +217,12 @@ function displayAdvert(adverts) {
             const advertisementElement = document.createElement('div');
 
             advertisementElement.innerHTML = `
+            <div class="advertContainer">
                 <h3>${advert.name}</h3>
                 <p class= "membership-${advert.mlevel}">Membership Level: ${advert.mlevel}</p>
                 <p>Location: ${advert.addresses}</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et, voluptate hic ullam quidem 
-            atque explicabo voluptatem ab laudantium? Aliquam.</p> `;
+            atque explicabo voluptatem ab laudantium? Aliquam.</p> </div>`;
             cardAdvert.appendChild(advertisementElement);
             i += 1;
         }
@@ -226,11 +231,12 @@ function displayAdvert(adverts) {
         adverts.forEach(advert => {
             const advertisementElement = document.createElement('div');
             advertisementElement.innerHTML = `
+            <div class="advertContainer">
             <h3>${advert.name}</h3>
             <p class= "membership-${advert.mlevel}">Membership Level: ${advert.mlevel}</p>
             <p>Location: ${advert.addresses}</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et, voluptate hic ullam quidem 
-            atque explicabo voluptatem ab laudantium? Aliquam.</p> 
+            atque explicabo voluptatem ab laudantium? Aliquam.</p> </div>
         `;
             cardAdvert.appendChild(advertisementElement);
         });
@@ -263,8 +269,8 @@ function checkAndDisplayBanner() {
 }
 
 const closeBanner = document.querySelector('#banner');
-closeBanner.addEventListener('click',() => {
-	closeBanner.style.display = 'none';
+closeBanner.addEventListener('click', () => {
+    closeBanner.style.display = 'none';
 });
 
 // Check and display the banner when the page loads
