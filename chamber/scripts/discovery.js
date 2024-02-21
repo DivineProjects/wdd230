@@ -147,8 +147,8 @@ apiFetch1();
 
 // Example JSON data containing chamber member information
 
-const membersURL = "https://divineprojects.github.io/wdd230/chamber/data/members.json";
-// const membersURL = "data/members.json";
+// const memberURL = "https://divineprojects.github.io/wdd230/data/members.json";
+const membersURL = "data/members.json";
 const cardAdvert = document.querySelector('.advertisements');
 
 async function getAdvert() {
@@ -164,77 +164,6 @@ async function getAdvert() {
 }
 
 
-
-// Display spotlight advertisements
-function displayAdvert(adverts) {
-
-    // Generate a random array
-    const randomAdvertList = shuffleArray(adverts);
-    if (adverts.length > 2) {
-        i = 0;
-        while (i < 2) { // limit adverts to 2
-            const advert = randomAdvertList[i];
-            const advertisementElement = document.createElement('div');
-
-            advertisementElement.innerHTML = `
-            <div class="advertContainer">
-                <h3>${advert.name}</h3>
-                <p class= "membership-${advert.mlevel}">Membership Level: ${advert.mlevel}</p>
-                <p>Location: ${advert.addresses}</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et, voluptate hic ullam quidem 
-            atque explicabo voluptatem ab laudantium? Aliquam.</p> </div>`;
-            cardAdvert.appendChild(advertisementElement);
-            i += 1;
-        }
-
-    } else {
-        adverts.forEach(advert => {
-            const advertisementElement = document.createElement('div');
-            advertisementElement.innerHTML = `
-            <div class="advertContainer">
-            <h3>${advert.name}</h3>
-            <p class= "membership-${advert.mlevel}">Membership Level: ${advert.mlevel}</p>
-            <p>Location: ${advert.addresses}</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et, voluptate hic ullam quidem 
-            atque explicabo voluptatem ab laudantium? Aliquam.</p> </div>
-        `;
-            cardAdvert.appendChild(advertisementElement);
-        });
-    }
-}
-
-// Function to shuffle an array using the Fisher-Yates algorithm
-function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        // Generate a random index between 0 and i
-        const j = Math.floor(Math.random() * (i + 1));
-
-        // Swap elements at i and j
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
-
-// reset the advert every 20 seconds
-getAdvert();
-
-
-// Function to check the day and display the banner accordingly
-function checkAndDisplayBanner() {
-    const today = new Date().getDay();
-    // Display the banner only on Mondays, Tuesdays, and Wednesdays (days 1, 2, and 3)
-    if (today >= 1 && today <= 3) {
-        document.querySelector('#banner').style.display = 'block';
-    }
-}
-
-const closeBanner = document.querySelector('#banner');
-closeBanner.addEventListener('click', () => {
-    closeBanner.style.display = 'none';
-});
-
-// Check and display the banner when the page loads
-window.onload = checkAndDisplayBanner;
 
 
 
