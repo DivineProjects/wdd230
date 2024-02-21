@@ -310,9 +310,9 @@ select {
 
 
 .cardContainer {
-    /* white-space: nowrap; */
+    white-space: nowrap;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 0;
     margin: 0;
     transition: 1s;
