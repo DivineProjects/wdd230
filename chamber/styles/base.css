@@ -246,6 +246,12 @@ select {
 
 }
 
+.card a {
+    background-color: rgba(0, 0, 0, .4);
+    color: var(--link-color);
+    border: 1px solid white;
+}
+
 .card ul {
     list-style-type: none;
     padding: 1rem;
@@ -541,9 +547,9 @@ hr {
     display: inline-block;
     padding: 0.25rem 0.5rem;
     text-decoration: none;
-    color: #0047ab;
-    background-color: #f4f4f4;
-    border: 2px solid #0047ab;
+    color: var(--link-color);
+    background-color: rgba(0, 0, 0, .4);
+    border: 2px solid white;
     border-radius: 4px;
     font-weight: 400;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
