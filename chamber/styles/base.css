@@ -126,8 +126,8 @@ main {
 }
 
 .main-dark {
-    background-color: #010C14;
-    color: var(--accent1-color);
+    background-color: rgb(41, 43, 44);
+    /* color: var(--accent1-color); */
 }
 
 .herolabel span {
