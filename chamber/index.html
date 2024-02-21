@@ -64,8 +64,12 @@
         </div>
         <div class="discover-hero">
             <h2>Hero Image</h2>
-            <img src="images/vic-falls-960.webp" alt="Bulawayo" width="960">
+            <picture>
+                <source srcset="images/vic-falls-400.webp" media="(max-width: 400px)">
+                <img src="images/vic-falls-960.webp" alt="Bulawayo" width="960" height="480" loading="lazy">
+            </picture>
         </div>
+
         <div class="homeMain">
             <section class="card">
                 <h2>A call to action: chamber of commerce</h2>
