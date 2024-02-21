@@ -104,8 +104,8 @@ const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lattitude
 const forecastId = document.querySelector('.cardContainer');
 // const url = `//api.openweathermap.org/data/2.5/onecall?lat={49.750265627063186}&lon={6.6315950909878545}&appid={57b35b35ea4398840f483c29f14b8533}';
 
-// const furl = "https://api.openweathermap.org/data/2.5/forecast?lat=-20.1525730567213&lon=28.58308545902036&appid=57b35b35ea4398840f483c29f14b8533&units=metric";
-const furl = 'data/forecast.json'
+const furl = "https://api.openweathermap.org/data/2.5/forecast?lat=-20.1525730567213&lon=28.58308545902036&appid=57b35b35ea4398840f483c29f14b8533&units=metric";
+// const furl = 'data/forecast.json'
 
 async function apiFetch1() {
 
@@ -156,7 +156,7 @@ function displayFocust(data) {
                             </div>
                             <div class="temp">
                                 <div class="infoPart topInfo">
-                                    <div class="temper"> ${Math.round(forecast.main.temp)}</div>
+                                    <div class="temper"> ${Math.round(forecast.main.temp_max)}</div>
                                 </div>
                                 <div class="infoPart topInfo">
                                     <div class="temper">${Math.round(forecast.main.temp_min)}</div>
