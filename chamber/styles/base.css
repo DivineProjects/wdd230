@@ -565,6 +565,21 @@ hr {
 
 /* End Discover.html Page css*/
 
+/* JOIN */
+.pwderror {
+    display: none;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    /*-this allows the at least 44px to the touch*/
+    color: white;
+    width: 100%;
+    /* full width on small screens*/
+    max-width: 20rem;
+    /* for large screens*/
+    background-color: #9c2c13;
+    margin-bottom: 0;
+    margin-top: 0.5rex;
+}
 /* small view navigation with humburgar menu*/
 #menu {
     font-size: 1rem;
