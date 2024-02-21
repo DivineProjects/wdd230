@@ -769,6 +769,7 @@ form input.submitBtn {
     margin: 0 5rem 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    cursor: pointer;
 }
 
 /* start thank you modification*/
@@ -846,6 +847,7 @@ form input.submitBtn {
     margin: 0 auto;
     margin-top: 0.25rem;
     padding: 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .list section>* {
@@ -866,12 +868,11 @@ form input.submitBtn {
 
 .list a {
     font-size: 0.85rem;
-    color: navy;
     text-transform: lowercase;
 }
 
 .list section:nth-child(even) {
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .footer-h {
