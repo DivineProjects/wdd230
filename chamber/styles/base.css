@@ -10,7 +10,7 @@
 
     --background-color: #023351;
     /* --link-color: rgb(0, 0, 0); */
-    --link-color: green;
+    --link-color: white;
     --border-line: white;
 }
 
@@ -634,6 +634,7 @@ footer img {
 }
 
 /* FOOTER MODIFIED*/
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -826,7 +827,7 @@ form input.submitBtn {
 
 .directGrid a {
     font-size: 0.85rem;
-    color: navy;
+    color: var(--link-color);
     text-transform: lowercase;
 }
 

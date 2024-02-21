@@ -324,7 +324,7 @@ footer {
     text-align: center;
     width: 100%;
     background-color: var(--footer-color);
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     left: 0;
     bottom: 0;
@@ -341,6 +341,82 @@ footer img {
     align-self: center;
     cursor: pointer;
 }
+
+/* FOOTER MODIFIED*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 100%;
+}
+
+.footer-col h4 {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    bottom: -0.25rem;
+    box-sizing: border-box;
+    width: 50px;
+    background-color: red;
+    height: 2px;
+}
+
+.footer-col p {
+    display: block;
+    width: 100%;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 0.25rem;
+}
+
+.footer-col ul li a {
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease;
+}
+
+.footer-copymodified {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.hover:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, .8);
+}
+
+.footer-h {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 
 @media (max-width: 599px) {
     .subscription {
