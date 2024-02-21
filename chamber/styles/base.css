@@ -201,8 +201,18 @@ section a {
     top: 5%;
     left: 5%;
     right: 5%;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(0, 0, 0, .4);
     padding: 0.5rem;
+    text-align: center;
+}
+
+.discover-hero h2 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    right: 10%;
+    background-color: rgba(0, 0, 0, .4);
+    padding: 1rem;
     text-align: center;
 }
 
@@ -434,7 +444,7 @@ select {
     background-color: rgba(0, 0, 0, .7);
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: absolute;
     top: 30%;
     left: 25%;
     margin: 0 auto;
@@ -442,6 +452,7 @@ select {
     z-index: 1000;
     opacity: 0.9;
 }
+
 
 #closeButton {
     cursor: pointer;
