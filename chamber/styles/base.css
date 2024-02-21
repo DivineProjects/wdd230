@@ -316,7 +316,7 @@ select {
     padding: 0;
     margin: 0;
     transition: 1s;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .cardContainer li {
