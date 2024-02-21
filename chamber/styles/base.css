@@ -310,11 +310,13 @@ select {
 
 
 .cardContainer {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     transition: 1s;
+    justify-content: space-between;
 }
 
 .cardContainer li {
@@ -325,12 +327,12 @@ select {
 .setSpan {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 2rem;
-    padding-top: 12px;
-    padding-bottom: 18px;
+    padding-left: 0;
+    padding-right: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
 }
@@ -345,7 +347,7 @@ select {
 
 .headerFocust {
     text-transform: capitalize;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 20px;
     margin: 0 0 4px 0;
 }
@@ -355,7 +357,7 @@ select {
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 6px;
+    padding-left: 2px;
 }
 
 .iconTemp {
@@ -375,9 +377,9 @@ select {
 .temp {
     display: flex;
     flex-direction: column;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     text-align: center;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     width: 0;
     flex: 1 1 auto;
 }
@@ -758,12 +760,14 @@ form label.top textarea {
     /* for large screens*/
     background-color: rgba(0, 0, 0, 0.1)
 }
+
 /* show left border red if input is empty / invalid*/
-form label.top input:required{
+form label.top input:required {
     border-left: 6px solid red;
 }
+
 /* changes border to green if input is valid*/
-form label.top input:required:valid{
+form label.top input:required:valid {
     border-left: 6px solid green;
 }
 

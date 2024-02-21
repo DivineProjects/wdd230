@@ -40,10 +40,11 @@ function displayResults(data) {
                                 <div class="infoPart topInfo">
                                     <div class="temper"> ${Math.round(data.main.temp)}&deg;C</div>
                                 </div>
+                            </div>
+                            <div class="temp">
                                 <div class="infoPart topInfo">
                                     <div class="discWeather">${data.weather[0].description}</div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
