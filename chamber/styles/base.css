@@ -758,7 +758,14 @@ form label.top textarea {
     /* for large screens*/
     background-color: rgba(0, 0, 0, 0.1)
 }
-
+/* show left border red if input is empty / invalid*/
+form label.top input:required{
+    border-left: 6px solid red;
+}
+/* changes border to green if input is valid*/
+form label.top input:required:valid{
+    border-left: 6px solid green;
+}
 
 form label.sbs {
     display: block;
