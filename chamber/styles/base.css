@@ -70,24 +70,29 @@ nav ul {
     list-style-type: none;
 }
 
+
 nav a {
     display: block;
     text-decoration: none;
     text-align: center;
     padding: 1rem;
+    color: var(--text-color);
     /* color: var(--text-color); */
 
 }
 
 nav a:hover {
     /* border: 1px solid white; */
-    background-color: rgba(255, 255, 255, .2);
-    font-weight: 700;
+    background-color: rgba(255, 255, 255, .1);
+
 }
 
 .active {
     border-bottom: 2px solid yellow;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
     margin-bottom: 2px;
+
 }
 
 
@@ -144,8 +149,9 @@ section {
     background-color: rgba(255, 255, 255, 0.2);
     font-size: 0.8rem;
 }
-section h2{
-    font-weight:bold;
+
+section h2 {
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -344,7 +350,6 @@ select {
     vertical-align: middle;
     transform: scale(0.25);
     transform-origin: top left;
-    pointer-events: none;
 }
 
 .temp {
@@ -396,7 +401,7 @@ select {
 /* ADVERTISEMENT */
 
 .advertisements {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
@@ -406,6 +411,10 @@ select {
 
 .advertContainer {
     padding: 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
 }
 
 
@@ -422,7 +431,7 @@ select {
 /* BURNNER */
 #banner {
     display: none;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
     text-align: center;
     padding: 1rem;
     position: fixed;
@@ -444,7 +453,7 @@ select {
 
 hr {
     border: none;
-    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
     overflow: visible;
     text-align: center;
 }
@@ -588,11 +597,10 @@ iframe {
 
 /* FOOTER */
 footer {
-    color: var(--primary-color);
     padding: 20px;
     text-align: center;
     width: 100%;
-    background-color: var(--footer-color);
+    background-color: rgba(0, 0, 0, .1);
 }
 
 footer a {
@@ -654,7 +662,7 @@ footer img {
 }
 
 .footer-col ul li a:hover {
-    color: #0047ab;
+    font-size: 1.2rem;
     padding-left: 10px;
 }
 
