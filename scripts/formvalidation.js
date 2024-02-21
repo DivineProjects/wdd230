@@ -7,7 +7,7 @@ var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/
 pwd2.addEventListener('focusout', () => {
     if (pwd.value !== pwd2.value) {
         pwderror.style.display = 'block';
-        pwderror.textContent = "â—Passwords do not match!";
+        pwderror.textContent = "❗ Passwords do not match!";
         pwd.value = "";
         pwd2.value = "";
         pwd.focus();
@@ -19,14 +19,7 @@ pwd2.addEventListener('focusout', () => {
         pwd2.value = "";
         pwd.focus();
 
-    } else if (!regularExpression.test(pwd.value) && !regularExpression.test(pwd.value)) {
-        pwderror.textContent = "❗ Use alphanumeric characters!";
-        pwd.value = "";
-        pwd2.value = "";
-        pwd.focus();
-    }
-
-    else {
+    } else {
         pwderror.value = 'Passwords Match!!';
         pwderror.style.backgroundColor = 'lightgreen';
 
@@ -36,6 +29,8 @@ pwd2.addEventListener('focusout', () => {
         }, 1500);
 
     }
+
+    
 });
 
 
