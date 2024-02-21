@@ -1,26 +1,41 @@
-const value = document.querySelector("#value");
-const input = document.querySelector("#rating");
-value.textContent = input.value;
-input.addEventListener("input", (event) => {
-    value.textContent = event.target.value;
-});
+
 
 const pwd = document.querySelector('#pwd');
 const pwd2 = document.querySelector('#pwd2');
 const pwderror = document.querySelector('.pwderror');
-
-
-pwd2.addEventListener('input', () => {
+var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/
+pwd2.addEventListener('focusout', () => {
     if (pwd.value !== pwd2.value) {
         pwderror.style.display = 'block';
-    } else {
-        pwderror.style.backgroundColor = 'lightgreen';
-        pwderror.value = 'Passwords Match!!';
-        // After 1 second, revert the background color and hide the message
-        setTimeout(() => {pwderror.style.display = 'none';
-        }, 1000);
+        pwderror.textContent = "â—Passwords do not match!";
+        pwd.value = "";
+        pwd2.value = "";
+        pwd.focus();
+    } else if (pwd.value.length < 8 && pwd2.value.length < 8) {
 
-        
+        pwderror.style.display = 'block';
+        pwderror.textContent = "❗ Password need at least 8 characters";
+        pwd.value = "";
+        pwd2.value = "";
+        pwd.focus();
+
+    } else if (!regularExpression.test(pwd.value) && !regularExpression.test(pwd.value)) {
+        pwderror.textContent = "❗ Use alphanumeric characters!";
+        pwd.value = "";
+        pwd2.value = "";
+        pwd.focus();
+    }
+
+    else {
+        pwderror.value = 'Passwords Match!!';
+        pwderror.style.backgroundColor = 'lightgreen';
+
+        // After 1 second, revert the background color and hide the message
+        setTimeout(() => {
+            pwderror.style.display = 'none';
+        }, 1500);
+
     }
 });
+
 
