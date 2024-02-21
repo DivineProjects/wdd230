@@ -242,6 +242,8 @@ select {
     align-items: center;
     margin: 0 auto;
     padding: 0.5rem;
+    text-align: justify;
+
 }
 
 .card ul {
@@ -317,7 +319,6 @@ select {
 .setSpan {
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-left: 0.5rem;
@@ -523,6 +524,9 @@ hr {
     align-items: center;
     margin: auto;
     padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
 }
 
 .purpose img {
@@ -531,7 +535,6 @@ hr {
     height: auto;
     margin: 0.25rem auto;
 }
-
 
 
 .paragraph-link {
