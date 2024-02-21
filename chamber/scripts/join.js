@@ -18,16 +18,19 @@ var numbers = /[0-9]/g;
 
 organisation.addEventListener('focusout', () => {
     if (organisation.value.length < 7) {
+        nameerror.style.backgroundColor = '#9c2c13';
         nameerror.style.display = 'block';
         nameerror.textContent = "❗Organ name needs at least 7 characters!";
         organisation.value = "";
         organisation.focus();
 
     } else if (!regularExpression.test(organisation.value)) {
+        nameerror.style.backgroundColor = '#9c2c13';
         nameerror.textContent = "❗Accepts alpha characters, hyphens, and spaces!";
         organisation.value = "";
         organisation.focus();
     } else if (organisation.value.match(numbers)) {
+        nameerror.style.backgroundColor = '#9c2c13';
         nameerror.style.display = 'block';
         nameerror.textContent = "❗Organ name should not nave numbers!";
         organisation.value = "";
