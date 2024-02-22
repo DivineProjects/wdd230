@@ -219,10 +219,8 @@ function shuffleArray(array) {
 getAdvert();
 
 
-// Function to check the day and display the banner accordingly
 function checkAndDisplayBanner() {
     const today = new Date().getDay();
-    // Display the banner only on Mondays, Tuesdays, and Wednesdays (days 1, 2, and 3)
     if (today >= 1 && today <= 3) {
         document.querySelector('#banner').style.display = 'block';
     }
