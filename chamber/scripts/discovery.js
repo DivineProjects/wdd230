@@ -1,7 +1,7 @@
 // select HTML elements in the document
 const weather = document.querySelector('.weather');
 const sealevel = document.querySelector('#sealevel');
-const humitidty= document.querySelector("#humidity");
+const humitidty = document.querySelector("#humidity");
 
 // const url = `//api.openweathermap.org/data/2.5/onecall?lat={49.750265627063186}&lon={6.6315950909878545}&appid={57b35b35ea4398840f483c29f14b8533}';
 
@@ -29,9 +29,9 @@ async function apiFetch() {
 
 function displayResults(data) {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    sealevel.textContent= data.main.sea_level;
-    humitidty.innerHTML=`${data.main.humidity}`;
-    
+    sealevel.textContent = data.main.sea_level;
+    humitidty.innerHTML = `${data.main.humidity}`;
+
     // console.log(data.weather[0].description);
     // weather.innerHTML = `<img src="${iconsrc}" alt="${data.weather[0].description}">  <span id="weather-disc">${data.weather[0].description}</span> <span id="imgWeather">${data.main.temp}&deg;C </span> <br>`;
     weather.innerHTML = `
@@ -40,7 +40,7 @@ function displayResults(data) {
                         <p class="headerFocust">today</p>
                         <div class="iconTempPart">
                             <div class="iconTemp">
-                                <img class="iconTempImg" src="${iconsrc}" alt="${data.weather[0].description}"></img>
+                                <img class="iconTempImg" src="${iconsrc}" alt="${data.weather[0].description}" loading="lazy"></img>
                             </div>
                             <div class="temp">
                                 <div class="infoPart topInfo">
